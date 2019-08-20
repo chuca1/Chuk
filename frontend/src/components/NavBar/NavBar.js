@@ -31,8 +31,8 @@ export default class Menu extends Component {
         </button>
         <div className={"collapse navbar-collapse justify-content-end " + show}>
           <div className="navbar-nav sticky-top">
-            <Link to="/archivments" style={{ textDecoration: "none" }}>
-              <span className="nav-item nav-link">Archivments</span>
+            <Link to="/archievements" style={{ textDecoration: "none" }}>
+              <span className="nav-item nav-link">Archievements</span>
             </Link>
             <Link to="/works" style={{ textDecoration: "none" }}>
               <span className="nav-item nav-link">Works</span>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 const Resume = () => {
   return (
     <div>
@@ -10,11 +11,14 @@ const Resume = () => {
         />
         <div>
           <h2>GM. Diego GM</h2>
+
           <p>
             Coder, Twitter Early Bird 2019, IronHacker, ITESM student,
             avant-garde, sports fan, human. To learn more about me enter here
           </p>
-          <Button>Here</Button>
+          <Link to="/archievements">
+            <Button>Here</Button>
+          </Link>
         </div>
       </div>
     </div>

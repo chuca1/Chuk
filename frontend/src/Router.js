@@ -11,7 +11,7 @@ const Router = () => (
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/archivments" component={SeeAllLogros} />
+        <Route exact path="/archievements" component={SeeAllLogros} />
         <Route exact path="/works" component={SeeAllTrabajos} />
         <Route exact path="/contact" component={Contactme} />
       </Switch>

@@ -27,8 +27,8 @@ class SeeAllLogros extends Component {
           <h2>
             Today, I consider myself the luckiest man on the face of the earth.
           </h2>
-          <p>Here are some of my archivments in the last years.</p>
         </div>
+        <p>Here are some of my archivments in the last years.</p>
         <hr />
         {logros.map((logro, i) => {
           if (i % 2 === 0) {

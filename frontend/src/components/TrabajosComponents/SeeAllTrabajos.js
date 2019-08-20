@@ -17,11 +17,10 @@ class SeeAllTrabajos extends Component {
 
     return (
       <div className="AllLogros">
-        <div>
-          <h2>Show me the code </h2>
-          <br />
-          <p> Here you will find my work in the STEM category.</p>
+        <div className="Que">
+          <h2>Honey? Whre is my Viscual Code?</h2>
         </div>
+        <p> Here you will find my work in the STEM category.</p>
         <hr />
         {trabajos.map((trabajo, i) => {
           if (trabajo.link !== undefined) {

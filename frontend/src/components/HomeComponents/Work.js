@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 const Work = () => {
   return (
     <div>
@@ -14,7 +15,9 @@ const Work = () => {
             JavaScript, Node Js, React Js, MongoDB, Ajax, C++, Python.
             <br /> To learn more click here
           </p>
-          <Button>Here</Button>
+          <Link to="/works">
+            <Button>Here</Button>
+          </Link>
         </div>
         <img
           src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg"
