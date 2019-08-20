@@ -29,28 +29,37 @@ class SeeAllLogros extends Component {
           </h2>
           <p>Here are some of my archivments in the last years.</p>
         </div>
+        <hr />
         {logros.map((logro, i) => {
           if (i % 2 === 0) {
             return (
+              <>
+                <div key={i}>
+                  <div>
+                    <h3>{logro.name}</h3>
+                    <h4>{logro.date}</h4>
+                    <p>{logro.description}</p>
+                  </div>
+                  <img src={logro.imagen} alt="imagen logro" />
+                </div>
+
+                <hr />
+              </>
+            );
+          }
+          return (
+            <>
               <div key={i}>
+                <img src={logro.imagen} alt="imagen logros" />
                 <div>
                   <h3>{logro.name}</h3>
                   <h4>{logro.date}</h4>
                   <p>{logro.description}</p>
                 </div>
-                <img src={logro.imagen} alt="imagen logro" />
               </div>
-            );
-          }
-          return (
-            <div key={i}>
-              <img src={logro.imagen} alt="imagen logros" />
-              <div>
-                <h3>{logro.name}</h3>
-                <h4>{logro.date}</h4>
-                <p>{logro.description}</p>
-              </div>
-            </div>
+
+              <hr />
+            </>
           );
         })}
       </div>

@@ -14,12 +14,13 @@ class SeeAllTrabajos extends Component {
   };
   render() {
     const { trabajos } = this.state;
-    console.log(trabajos);
+
     return (
       <div className="AllLogros">
         <div>
-          <h2>Show me the code</h2>
-          <p>Here you will find my work in the STEM category.</p>
+          <h2>Show me the code </h2>
+          <br />
+          <p> Here you will find my work in the STEM category.</p>
         </div>
         <hr />
         {trabajos.map((trabajo, i) => {
@@ -27,7 +28,7 @@ class SeeAllTrabajos extends Component {
             if (i % 2 === 0) {
               return (
                 <>
-                  <div key={i}>
+                  <div key={i} className="unTrabajo">
                     <div>
                       <h3>{trabajo.name}</h3>
                       <h4>{trabajo.date}</h4>
@@ -42,7 +43,7 @@ class SeeAllTrabajos extends Component {
             }
             return (
               <>
-                <div key={i}>
+                <div key={i} className="unTrabajo">
                   <img src={trabajo.imagen} alt="imagen logros" />
                   <div>
                     <h3>{trabajo.name}</h3>
@@ -58,7 +59,7 @@ class SeeAllTrabajos extends Component {
           if (i % 2 === 0) {
             return (
               <>
-                <div key={i}>
+                <div key={i} className="unTrabajo">
                   <div>
                     <h3>{trabajo.name}</h3>
                     <h4>{trabajo.date}</h4>
@@ -72,7 +73,7 @@ class SeeAllTrabajos extends Component {
           }
           return (
             <>
-              <div key={i}>
+              <div key={i} className="unTrabajo">
                 <img src={trabajo.imagen} alt="imagen logros" />
                 <div>
                   <h3>{trabajo.name}</h3>
