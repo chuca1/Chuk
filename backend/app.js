@@ -39,7 +39,8 @@ app.use(
     credentials: true,
     origin: [
       "https://affectionate-franklin-d5b3a2.netlify.com",
-      "http://localhost:3000"
+      "http://localhost:3000",
+      "chucagm.com"
     ]
   })
 );
