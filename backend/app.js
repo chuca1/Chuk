@@ -40,7 +40,7 @@ app.use(
     origin: [
       "https://affectionate-franklin-d5b3a2.netlify.com",
       "http://localhost:3000",
-      "http://chucagm.com"
+      "https://chucagm.com"
     ]
   })
 );
