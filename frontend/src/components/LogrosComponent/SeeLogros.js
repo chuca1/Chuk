@@ -12,12 +12,6 @@ class SeeAllLogros extends Component {
         this.setState({ logros: data.logros });
       })
       .catch(err => console.log(err));
-    axios
-      .get("http://chuca.herokuapp.com/trabajos")
-      .then(({ data }) => {
-        this.setState({ trabajos: data.trabajos });
-      })
-      .catch(err => console.log(err));
   };
   render() {
     const { logros } = this.state;
@@ -28,7 +22,7 @@ class SeeAllLogros extends Component {
             Today, I consider myself the luckiest man on the face of the earth.
           </h2>
         </div>
-        <p>Here are some of my archivments in the last years.</p>
+        <p>Here are some of my achievements in the last years.</p>
         <hr />
         {logros.map((logro, i) => {
           if (i % 2 === 0) {

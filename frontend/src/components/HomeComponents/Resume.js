@@ -6,7 +6,7 @@ const Resume = () => {
     <div>
       <div className="Resume">
         <img
-          src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg"
+          src="https://res.cloudinary.com/chuca/image/upload/v1570048882/Chuca-logo-tr_mkhwlb.png"
           alt="aqui va mi logo"
         />
         <div>
